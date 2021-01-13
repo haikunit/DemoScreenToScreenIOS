@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Person {
+struct Person : Codable {
     var hoten: String
     var birthDay: String
 

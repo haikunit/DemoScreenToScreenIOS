@@ -16,12 +16,22 @@ class GreenViewController: UIViewController {
     @IBOutlet var tvName: UILabel!
     @IBOutlet var tvBirthDay: UILabel!
     
+    var indicator: UIActivityIndicatorView? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tvName.text = person.hoten
         tvBirthDay.text = person.birthDay
-        // Do any additional setup after loading the view.
+ 
+        indicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+        indicator?.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+        indicator?.center = view.center
+        self.view.addSubview(indicator!)
+        self.view.bringSubviewToFront(indicator!)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        
+        
     }
     
     @IBAction func btnGoToYellow(_ sender: Any) {
@@ -34,14 +44,14 @@ class GreenViewController: UIViewController {
         edtHotenXanh.text = hoTen
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func btnShowLoading(_ sender: Any) {
+        indicator?.startAnimating()
     }
-    */
-
+    
+    @IBAction func btnHideLoading(_ sender: Any) {
+        indicator?.stopAnimating()
+    }
+    
+    
 }

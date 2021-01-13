@@ -33,6 +33,7 @@
 		0048E5DF2593907200A44574 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 		0048E5E125939D2B00A44574 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		0048E5E325939F1400A44574 /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
+		00C3245925AEEDD900C240FF /* AutoLayoutExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoLayoutExample.entitlements; sourceTree = "<group>"; };
 		7801C48445082E24A239FF27 /* Pods-AutoLayoutExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutExample.debug.xcconfig"; path = "Target Support Files/Pods-AutoLayoutExample/Pods-AutoLayoutExample.debug.xcconfig"; sourceTree = "<group>"; };
 		9598DA8E9E7DD6C017989D24 /* Pods_AutoLayoutExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AutoLayoutExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC023C7FACC7F08A3A2AD90A /* Pods-AutoLayoutExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutoLayoutExample.release.xcconfig"; path = "Target Support Files/Pods-AutoLayoutExample/Pods-AutoLayoutExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		003BDAAA258BAF80003F3207 /* AutoLayoutExample */ = {
 			isa = PBXGroup;
 			children = (
+				00C3245925AEEDD900C240FF /* AutoLayoutExample.entitlements */,
 				003BDAAB258BAF80003F3207 /* AppDelegate.swift */,
 				003BDAAD258BAF80003F3207 /* SceneDelegate.swift */,
 				003BDAAF258BAF80003F3207 /* ViewController.swift */,
@@ -369,6 +371,7 @@
 			baseConfigurationReference = 7801C48445082E24A239FF27 /* Pods-AutoLayoutExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoLayoutExample/AutoLayoutExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AutoLayoutExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,6 +390,7 @@
 			baseConfigurationReference = EC023C7FACC7F08A3A2AD90A /* Pods-AutoLayoutExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AutoLayoutExample/AutoLayoutExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AutoLayoutExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

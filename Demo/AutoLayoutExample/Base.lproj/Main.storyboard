@@ -32,12 +32,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pqy-Ou-9gB">
+                                <rect key="frame" x="20" y="602" width="374" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="DlR-hY-7B5"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pqy-Ou-9gB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bjs-GK-iCz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pqy-Ou-9gB" secondAttribute="trailing" constant="20" id="IIW-4B-ffI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pqy-Ou-9gB" secondAttribute="bottom" constant="20" id="RBa-FW-tyQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="wkr-Qq-pBa"/>
                     <connections>
+                        <outlet property="ivTest" destination="pqy-Ou-9gB" id="dI7-LA-YWj"/>
                         <outlet property="tvHoTen" destination="cnr-58-xwm" id="dqA-I2-PKy"/>
                     </connections>
                 </viewController>
@@ -137,6 +149,22 @@
                                 <state key="normal" title="Go To Yellow"/>
                                 <connections>
                                     <action selector="btnGoToYellow:" destination="wWt-vD-TUd" eventType="touchUpInside" id="sOL-cu-c2Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSp-Qe-6E0">
+                                <rect key="frame" x="132" y="634" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show loading"/>
+                                <connections>
+                                    <action selector="btnShowLoading:" destination="wWt-vD-TUd" eventType="touchUpInside" id="2FL-r1-Ho1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3K-y8-YYJ">
+                                <rect key="frame" x="135" y="680" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Hide loading"/>
+                                <connections>
+                                    <action selector="btnHideLoading:" destination="wWt-vD-TUd" eventType="touchUpInside" id="PJz-a1-eqf"/>
                                 </connections>
                             </button>
                         </subviews>

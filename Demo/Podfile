@@ -6,6 +6,8 @@ target 'AutoLayoutExample' do
   use_frameworks!
 pod 'Alamofire'
 pod 'FoldingCell'
+pod 'AlamofireImage', '~> 4.1'
+pod 'KeychainSwift'
   # Pods for AutoLayoutExample
 
 end
